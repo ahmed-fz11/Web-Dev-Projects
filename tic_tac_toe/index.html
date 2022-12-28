@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TIC TAC TOE Game</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>AwisumsTicTacToe.com</li>
+        </ul>
+    </nav>
+    <div class="gameContainer">
+        <div class="gridContainer">
+            <div class="line"></div>
+            <div class="box bt-0 bl-0 br-0"><span class="boxtext"></span></div>
+            <div class="box bt-0 br-0 "><span class="boxtext"></span></div>
+            <div class="box bt-0 br-0"><span class="boxtext"></span></div>
+            <div class="box bt-0 bl-0 br-0"><span class="boxtext"></span></div>
+            <div class="box bt-0 br-0"><span class="boxtext"></span></div>
+            <div class="box box bt-0 br-0"><span class="boxtext"></span></div>
+            <div class="box box bt-0 br-0 bb-0 bl-0"><span class="boxtext"></span></div>
+            <div class="box br-0 bb-0 bt-0"><span class="boxtext"></span></div>
+            <div class="box br-0 bb-0 bt-0"><span class="boxtext"></span></div>
+        </div>
+        <div class="infoContainer">
+            <h1>Welcome to tic tac toe bros</h1>
+            <div>
+                <span class="info">Turn of bro: X</span>
+                <button class="reset" id="buton" onclick="refresh(this)">Reset</button>
+                <button id="buton" onclick="mute()" style="margin-left: -20px;">Mute</button>
+                <button id="buton" onclick="unmute()" style="margin-left: -20px;">Unmute</button>
+            </div>
+            <div class="imagebox">
+                <img src="winner.gif" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
