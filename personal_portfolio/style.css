@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.atom{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    
+
+}
+
+nav{
+    display: flex;
+    margin: auto;
+    width: 84%;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+nav ul li a:hover{
+    color: green;
+}
+
+.detail{
+    margin: 8%;
+    margin-top: 10%;
+}
+
+.detail h1{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.detail p{
+    color: rgb(39, 38, 38);
+    line-height: 22px;
+}
+
+.detail a{
+    background: orange;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.buttonglow{
+    transition: all 0.2s ease-in-out;
+}
+.buttonglow:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  }
+
+  .pic_glow{
+    transition: all 0.2s ease-in-out;
+}
+.pic_glow:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.795);
+  }
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shap{
+    bottom: 40px;
+}
+
+.images:hover .ahmd{
+    left: 45%
+}
+
+.headings{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding :10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, orange 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px orange;
+}
+.box img{
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+#about{
+    background-image: url(images/robot.jpg);
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 0;
+  background-blend-mode: lighten soft-light screen;
+}
+
+#projects{
+    background-image: url(images/stanley-dai-73OZYNjVoNI-unsplash.jpg);
+    background-repeat: no-repeat;
+  background-size: 100% 100%; 
+  background-blend-mode: lighten soft-light screen;
+}
+
+#services{
+    background-image: url(images/tech.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: lighten soft-light screen;
+  background-size: 100% 100%;
+}
+
+#hireme{
+    background-image: url(images/color\ wire.jpg);
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-blend-mode: lighten soft-light screen;
+  
+}
+
+
+
